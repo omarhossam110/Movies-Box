@@ -1,0 +1,103 @@
+.form_container{
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background: transparent; */
+    /* backdrop-filter: blur(55px); */
+    border-radius: 5px;
+    padding: 1.4rem;
+}
+
+.form_container h2{
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.inputBox {
+  position: relative;
+  margin: 1.6rem 0 10px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.inputBox label {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+
+input:focus ~ label,  
+input:invalid ~ label {
+  top: -7px;
+}
+
+.inputBox input {
+  width: 100%;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.showPass{
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.formButton {
+  width: 100%;
+  height: 40px;
+  margin-top: 2%;
+  border-radius: 40px;
+  background-color: rgb(255, 255,255, 1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.formButton:hover {
+background-color: rgb(255, 255,255, 0.5);
+}
+
+.paragraph{
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.paragraph p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.paragraph p a:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .form_container{
+       width: 45%;
+     }
+   }
+
+   @media only screen and (max-width: 768px) {
+    .form_container{
+       width: 60%;
+     }
+   }

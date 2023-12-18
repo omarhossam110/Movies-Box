@@ -1,0 +1,35 @@
+.search_form{
+    position: relative;
+    display: inline-block;
+    width: 22rem;
+}
+
+.search_input{
+    border-radius: 25rem !important;
+    background-color: transparent !important;
+    border-color:#ffca2c !important; 
+    transition: all .5s ease-in !important;
+
+}
+.search_input::placeholder{
+    color: #ffca2c !important;
+}
+
+.search_input:focus{
+    color: #212529;
+    background-color: #fff !important;
+    border-color: rgb(255, 203, 46);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 203, 46,.25) !important;
+}
+
+.search_icon{
+    position: absolute;
+    top:1px;
+    right:8px;
+
+    outline: 0 !important;
+    border: 0 !important;
+
+    border-radius: 25rem !important;
+}

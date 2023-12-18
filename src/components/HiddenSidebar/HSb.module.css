@@ -1,0 +1,57 @@
+.HiddenSidebar{
+    z-index: 100;
+    position: fixed;
+    left:-1px;
+    top: 47vh;
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    color: antiquewhite;
+    padding: 10px;
+    border: 1px solid #777;
+    font-weight: 700;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.optionsIcon{
+    font-size: 30px;
+}
+
+.canvasColor{
+    background: linear-gradient(45deg, #0b0020, #107f83) !important; 
+}
+
+
+.sidebar{
+    background-color: transparent;
+    color: antiquewhite;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.sidebar_link{
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all .2s ease-in;
+    border-bottom: 1px solid #777;
+}
+
+.sidebar_link:hover{
+    background-color: #0e0e0e; 
+    border-radius: 5px;
+}
+
+.sidebarCanvasColor:hover{
+    color: #000;
+    background-color: #f8f9fa !important; 
+}
+
+
+
+@media only screen and (min-width: 992px) {
+   .HiddenSidebar{
+      display: none;
+    }
+  }

@@ -1,0 +1,80 @@
+footer{
+    background: linear-gradient(45deg, #0b0020, #107f83);
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.footerBox{
+    padding: 2rem;
+}
+
+.footer__list {
+    border-top: 1px solid #777;
+    padding-top: 8px;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.footer__item{
+    display: inline-block;
+}
+
+.footer__item:not(:first-child) {
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.footer__link:link,
+.footer__link:visited {
+    color: #f7f7f7;
+    /* background-color: #212529; */
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__link:hover,
+.footer__link:active {
+    box-shadow: 0 1rem 2rem rgba(#000, 0.4);
+    transform: rotate(5deg) scale(1.2);
+}
+
+.footer__linkGmail {
+    fill: #f7f7f7;
+    margin-right: 2px;
+}
+
+.footer__link:hover .footer__linkGmail {
+    fill: #e03f39;
+}
+
+.footer__linkLinkedIn {
+    fill: #f7f7f7;
+    margin-right: 2px;
+}
+
+.footer__link:hover .footer__linkLinkedIn {
+    fill: #0e76a8;
+}
+
+.footer__linkGitHup {
+    fill: #f7f7f7;
+    margin-right: 2px;
+}
+
+.footer__link:hover .footer__linkGitHup {
+    fill: #e4a621;
+    color: #ffca2c;
+}
+
+.footer__copyright p{
+    font-size: 1rem;
+    padding-top: 8px;
+    border-top: 1px solid #777;
+}

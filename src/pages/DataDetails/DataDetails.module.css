@@ -1,0 +1,29 @@
+
+.data_container{
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+    padding: 1.4rem;
+    background-color: rgba(0, 0,0, .5);
+    box-shadow: rgb(171 169 171) 0px 0px 5px 0px;
+}
+
+.contentDetails{
+  display: flex;
+  align-items: center;
+   /* background-color: rgba(33, 37, 41, .9); */
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .form_container{
+       width: 45%;
+     }
+   }
+
+   @media only screen and (max-width: 768px) {
+    .form_container{
+       width: 60%;
+     }
+   }

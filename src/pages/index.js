@@ -1,0 +1,9 @@
+export{default as Home} from "./Home/Home";
+export{default as Movies} from "./Movies/Movies";
+export{default as TvShow} from "./TvShow/TvShow";
+export{default as Person} from "./Person/Person";
+export{default as DataDetails} from "./DataDetails/DataDetails";
+export{default as UserProfile} from "./UserProfile/UserProfile";
+export{default as Register} from "./Registration/SignUp";
+export{default as Login} from "./Registration/Login";
+export{default as NotFound} from "./404/NotFound";

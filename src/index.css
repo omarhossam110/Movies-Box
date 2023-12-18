@@ -5,6 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  background-color: #000;
+  color: antiquewhite;
+}
+
+body::-WebKit-scrollbar{
+  width: 10px;
+  background: #dadada;
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 100px;
+  background: #000;
 }
 
 code {

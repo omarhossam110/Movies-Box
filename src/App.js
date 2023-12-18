@@ -1,25 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider, createBrowserRouter} from "react-router-dom";
+import { AuthContextProvider, ProtectedRoute } from "./context/AuthContext";
+import { ApiContextProvider } from "./context/ApiContext";
+import { HomeContextProvider } from "./context/HomeContext";
+import {Home, Movies, TvShow, Person, DataDetails, UserProfile, Register, Login, NotFound} from "./pages";
+
+import MainLayout from "./Layouts/MainLayout";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ 
+  // First step to add Routers
+  const routers = createBrowserRouter([
+  {path:"/",element: <MainLayout />,
+    children:[
+    {index:true,element: <ProtectedRoute > <Home/> </ProtectedRoute>},
+    {path:"/home",element: <ProtectedRoute > <Home/> </ProtectedRoute>},
+    {path:"movies",element: <ProtectedRoute > <Movies/> </ProtectedRoute>},
+    {path:"tv-shows",element: <ProtectedRoute > <TvShow/>  </ProtectedRoute>},
+    {path:"actors&directors",element: <ProtectedRoute > <Person/> </ProtectedRoute>},
+    {
+      path: "movieDetails",
+      element: <ProtectedRoute > <DataDetails /> </ProtectedRoute>,
+      children: [
+        { path: ":media", children: [{ path: ":id" }] }, 
+      ],
+    },
+    {
+      path: "tvDetails",
+      element: <ProtectedRoute > <DataDetails /> </ProtectedRoute>,  
+      children: [
+        { path: ":media", children: [{ path: ":id" }] }, 
+      ],
+    },
+    {
+      path: "personDetails",
+      element: <ProtectedRoute > <DataDetails/> </ProtectedRoute>,
+      children: [
+        { path: ":media", children: [{ path: ":id" }] }, 
+      ],
+    },
+    {path:'profile',element:<ProtectedRoute > <UserProfile /> </ProtectedRoute>},
+    {path:'register',element: <Register/>},
+    {path:'login',element: 
+      <Login />
+      
+  },
+      
+    {path:"*",element: <NotFound/>}
+  ]}
+  ]);
+
+return <> 
+       {/* Second step to add Routers */} 
+       <AuthContextProvider>
+        <ApiContextProvider>
+          <HomeContextProvider>
+           <RouterProvider router={routers} ></RouterProvider>  
+          </HomeContextProvider>
+        </ApiContextProvider> 
+        </AuthContextProvider>         
+  </>
 }
 
 export default App;
