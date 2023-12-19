@@ -113,7 +113,7 @@ export default function SignUp() {
          
           setIsLoading(true);
           // sending new user data to backend 
-          let response = await axios.post('https://movies-app-backend-1fxl.onrender.com/users',user);
+          let response = await axios.post(`https://movies-app-backend-1fxl.onrender.com/users`,user);
           // console.log(response.data);
           
           // if the data successfully sent to the backend
