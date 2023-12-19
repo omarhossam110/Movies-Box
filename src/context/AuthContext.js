@@ -32,7 +32,7 @@ export function AuthContextProvider(props) {
   useEffect(()=>{
       fetchData(`https://movies-app-backend-1fxl.onrender.com/users`)
       .then((res)=>{
-        console.log(res.data)
+        // console.log(res.data)
         setAllUsers(res.data)
       })
   },[])
