@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
+import { postData } from './../../hooks/usePost';
 import Joi from 'joi';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -113,7 +114,7 @@ export default function SignUp() {
          
           setIsLoading(true);
           // sending new user data to backend 
-          let response = await axios.post(`https://movies-app-backend-1fxl.onrender.com/users`,user);
+          let response = await postData(`https://movies-app-backend-1fxl.onrender.com/users`,user);
           // console.log(response.data);
           
           // if the data successfully sent to the backend
