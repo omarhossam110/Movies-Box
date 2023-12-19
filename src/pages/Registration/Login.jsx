@@ -90,7 +90,7 @@ export default function Login() {
           setIsLoading(true);
           // sending data to backend 
           let response = 
-          await axios.get(`http://localhost:3000/users?email=${user.email}&password=${user.password}`);
+          await axios.get(`https://movies-app-backend-1fxl.onrender.com/users?email=${user.email}&password=${user.password}`);
           // console.log(response.data);
           
           // if the data successfully sent to the backend

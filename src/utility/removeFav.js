@@ -7,7 +7,7 @@ export async function removeFav(userToken, deletedFav,saveUserToken) {
 
   let newUserFav
 
-  await fetchData(`http://localhost:3000/users/${userData.id}`)
+  await fetchData(`https://movies-app-backend-1fxl.onrender.com/users/${userData.id}`)
   .then((result) => {
       let resUserData = result.data.favorites;
        console.log('from first fetch',resUserData)
@@ -25,7 +25,7 @@ export async function removeFav(userToken, deletedFav,saveUserToken) {
     })
 
    
-   await  patchData(`http://localhost:3000/users/${userData.id}`, newUserFav).then(
+   await  patchData(`https://movies-app-backend-1fxl.onrender.com/users/${userData.id}`, newUserFav).then(
       (res) => {
         console.log("response from patch",res.data);
         console.log("Removed from Favorite!!");
