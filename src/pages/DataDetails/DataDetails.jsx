@@ -36,7 +36,7 @@ export default function DataDetails() {
             {dataDetails ? (
 
           <div className="container">
-            <div className="d-flex align-items-center justify-content-center" style={{height:'100lvh'}}>
+            <div className="d-flex align-items-center justify-content-center">
                          <div className="me-3" style={{width:'33%'}}>
                            <img className="card w-100 rounded" alt={dataDetails.name || dataDetails.title}
                             src={`https://image.tmdb.org/t/p/w500/${dataDetails.poster_path ||  dataDetails.profile_path}`}/>

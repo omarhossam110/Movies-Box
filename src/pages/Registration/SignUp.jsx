@@ -150,7 +150,7 @@ export default function SignUp() {
     <section className={style.section}>
       <div className={style.navFix}>
          <div className="container">
-        <div className={styles.section} style={{height:'100lvh'}}>
+        <div className={styles.section}>
             <div className={`${styles.form_container}`}>
 
                 <h2 className="mb-3">Make Account!</h2>
