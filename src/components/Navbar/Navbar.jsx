@@ -36,8 +36,8 @@ export default function NavBar(){
   },[])
  
   return (
-      <Navbar collapseonselect expanded={expanded} expand="lg"
-        className={`${styles.model} ${scrollDown? styles.modelMove:null} navbar-expand-lg navbar-dark`}>   
+      <Navbar collapseOnSelect expanded={expanded} expand="lg"
+        className={`${styles.model} ${scrollDown? styles.modelMove:null} navbar-dark`}>   
         <Container>
 
           <Link className="navbar-brand" to="">
@@ -50,59 +50,70 @@ export default function NavBar(){
                   
              {userToken ? 
                <>
-                 <ul className="navbar-nav mb-2 mb-lg-0">
-                  <li className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
-                    <Nav.Link eventkey="1" as={Link} className="nav-link text-center" to="">
+                 <Nav className="navbar-nav mb-2 mb-lg-0">
+                  <Nav.Link onClick={() => setExpanded(expanded ? false : "expanded")}
+                  className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
+                    <Link className="nav-link text-center" to="">
                       Home
-                    </Nav.Link>
-                  </li>
-                  <li className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
+                    </Link>
+                  </Nav.Link>
+                  <Nav.Link  onClick={() => setExpanded(expanded ? false : "expanded")}
+                  className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
                     <Link className="nav-link text-center" to="movies">
                       Movies
                     </Link>
-                  </li>
-                  <li className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
+                  </Nav.Link>
+                  <Nav.Link  onClick={() => setExpanded(expanded ? false : "expanded")}
+                  className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
                     <Link className="nav-link text-center" to="tv-shows">
                       Tv Shows
                     </Link>
-                  </li>
-                  <li className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
+                  </Nav.Link>
+                  <Nav.Link onClick={() => setExpanded(expanded ? false : "expanded")}
+                  className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
                     <Link className="nav-link text-center" to="actors&directors">
                       Actors/Directors
                     </Link>
-                  </li>
-                 </ul>
+                  </Nav.Link>
+                 </Nav>
 
-                 <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
-                  <li className="nav-item d-flex align-items-center m-md-auto m-sm-auto">
+                 <Nav className="navbar-nav mb-2 mb-lg-0 ms-auto">
+                  <Nav.Link className="nav-item d-flex align-items-center m-md-auto m-sm-auto">
                     <p className="mb-lg-0 me-lg-3">Welcome &nbsp;
-                      <Link to='/profile' className={styles.profile_link}>
+                      <Link onClick={() => setExpanded(expanded ? false : "expanded")}
+                       to='/profile' className={styles.profile_link}>
                          {JSON.parse(userToken).first_name.toUpperCase()}
                       </Link>
                     </p>
-                  </li>
-                  <li className="nav-item p-2">
-                    <button className="btn btn-light d-flex m-md-auto m-sm-auto" onClick={logOut}>
+                  </Nav.Link>
+                  <Nav.Link className="nav-item p-2">
+                    <button className="btn btn-light d-flex m-md-auto m-sm-auto" 
+                            onClick={()=>{
+                              logOut();
+                              setExpanded(expanded ? false : "expanded");
+                              }}>
                       Logout
                     </button>
-                  </li>
-                 </ul> 
+                  </Nav.Link>
+                 </Nav> 
                </>
            
               :
         
-               <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
-               <li className="nav-item">
+               <Nav className="navbar-nav mb-2 mb-lg-0 ms-auto">
+                 <Nav.Link onClick={() => setExpanded(expanded ? false : "expanded")}
+                 className="nav-item">
                   <Link className="nav-link" to="register">
                      Sign Up
                   </Link>
-                </li>
-               <li className="nav-item">
+                 </Nav.Link>
+                 <Nav.Link onClick={() => setExpanded(expanded ? false : "expanded")}
+                 className="nav-item">
                   <Link className="nav-link" to="login">
                      Login
                   </Link>
-                </li>
-               </ul>
+                 </Nav.Link>
+               </Nav>
               }
              
         </Navbar.Collapse>
