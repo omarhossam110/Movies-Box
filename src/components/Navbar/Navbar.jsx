@@ -1,12 +1,17 @@
 import React,{ useEffect,useState} from 'react';
-import { Navbar } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 import styles from "./Navbar.module.css"
 import { useAuth } from '../../context/AuthContext';
+import { Nav } from 'react-bootstrap';
 
 export default function NavBar(){
   let navigate = useNavigate();
+
+  const [expanded, setExpanded] = useState(false);
 
   const {userToken,setUserToken} = useAuth();
  
@@ -31,25 +36,25 @@ export default function NavBar(){
   },[])
  
   return (
-      <Navbar collapseOnSelect expand="lg"
-        className={`${styles.model} ${scrollDown? styles.modelMove:null} navbar-expand-lg navbar-dark`}>
-      
-        <div className="container-fluid">
+      <Navbar collapseonselect expanded={expanded} expand="lg"
+        className={`${styles.model} ${scrollDown? styles.modelMove:null} navbar-expand-lg navbar-dark`}>   
+        <Container>
+
           <Link className="navbar-brand" to="">
            <h2>MoviesBox</h2>
           </Link>
 
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav" 
-          className={`${styles.collapse} ${scrollDown? styles.collapseColor:null}`}>
-            
-          {userToken ? 
-            <>
-             <ul className="navbar-nav mb-2 mb-lg-0">
+          <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav" 
+              className={`${styles.collapse} ${scrollDown? styles.collapseColor:null}`}>
+                  
+             {userToken ? 
+               <>
+                 <ul className="navbar-nav mb-2 mb-lg-0">
                   <li className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
-                    <Link className="nav-link text-center" to="">
+                    <Nav.Link eventkey="1" as={Link} className="nav-link text-center" to="">
                       Home
-                    </Link>
+                    </Nav.Link>
                   </li>
                   <li className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
                     <Link className="nav-link text-center" to="movies">
@@ -66,9 +71,9 @@ export default function NavBar(){
                       Actors/Directors
                     </Link>
                   </li>
-                </ul>
+                 </ul>
 
-                <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
+                 <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
                   <li className="nav-item d-flex align-items-center m-md-auto m-sm-auto">
                     <p className="mb-lg-0 me-lg-3">Welcome &nbsp;
                       <Link to='/profile' className={styles.profile_link}>
@@ -81,12 +86,12 @@ export default function NavBar(){
                       Logout
                     </button>
                   </li>
-                </ul> 
-           </>
+                 </ul> 
+               </>
            
-            :
+              :
         
-           <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
+               <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
                <li className="nav-item">
                   <Link className="nav-link" to="register">
                      Sign Up
@@ -97,13 +102,11 @@ export default function NavBar(){
                      Login
                   </Link>
                 </li>
-            </ul>
-
-        }
-           
+               </ul>
+              }
+             
         </Navbar.Collapse>
-
-        </div>
+        </Container>
       </Navbar>
     );
   }

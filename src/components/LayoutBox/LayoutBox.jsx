@@ -111,7 +111,7 @@ export default function LayoutBox({reqData,page}) {
              <Button className={`btn btn-danger w-100`}  onClick={()=>{
                  removeFav(userToken,data,saveUserToken); 
                  removeNotify();    
-                 }}> Remove from Favorites
+                 }}> Remove Favorite
               </Button> 
              
              :                           
