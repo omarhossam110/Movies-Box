@@ -1,6 +1,7 @@
 
 .home_section_intro{
     position: relative;
+    width: 100%;
 }
 
 .home_section_intro::before{
@@ -19,7 +20,7 @@
     position: absolute;
     width: 300px;
 }
-.home_section_intro p{
+.home_section_intro h3{
   color: #ffca2c;
 }
 

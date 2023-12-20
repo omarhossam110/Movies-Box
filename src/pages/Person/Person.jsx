@@ -28,14 +28,14 @@ export default function Person() {
               <div className="col-lg-10 offset-lg-1">
                 <div className="container">
                   <div className="d-flex justify-content-between mb-2">
-                    <h3 className={`${styles.section_title}`}>
+                    <h2 className={`${styles.section_title}`}>
                       Popular People
-                    </h3>
+                    </h2>
 
                     <SearchForm searchData={searchPerson} />
                   </div>
 
-                  <div className="row">
+                  <div className="row mt-3">
                     {isLoading && <Loading />}
                     {hasError && <ConnectionErr />}
 

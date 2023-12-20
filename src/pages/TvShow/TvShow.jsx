@@ -55,14 +55,14 @@ export default function TvShow() {
                   className={`${styles.tv_section} container text-light rounded-1`}
                 >
                   <div className="d-flex justify-content-between">
-                    <h3 className={`${styles.section_title}`}>
+                    <h2 className={`${styles.section_title}`}>
                       {tvType?.replace("_", " ")} Shows
-                    </h3>
+                    </h2>
 
                     <SearchForm searchData={searchTvShow} />
                   </div>
 
-                  <div className="row">
+                  <div className="row mt-3">
                     {isLoading && <Loading />}
                     {hasError && <ConnectionErr />}
 

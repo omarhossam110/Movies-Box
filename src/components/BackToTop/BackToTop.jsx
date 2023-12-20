@@ -25,10 +25,10 @@ export default function BackToTop() {
         {backToTopBtn && (
             <button  style={{
                 position:"fixed",
-                bottom:"40px",
-                right:"20px",
-                height:"40px",
-                width:"40px",
+                bottom:"3rem",
+                right:"2rem",
+                height:"3rem",
+                width:"3rem",
                 fontSize:"29px",
                 background:"linear-gradient(45deg, #0b0020, #107f83)",
                 border: "1px",

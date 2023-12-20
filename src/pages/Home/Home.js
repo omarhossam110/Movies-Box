@@ -41,7 +41,7 @@ export default function Home() {
       <div className={style.navFix}>
            <div className="container mt-4 mb-5"> 
          <div className="row">        
-           <div className="col-lg-4 d-flex align-items-center mt-5 mb-3">
+           <div className="col-lg-4 col-sm-12 d-flex align-items-center mt-5 mb-3">
                  <HomeIntro reqData={introData[0]} />
            </div>
 
