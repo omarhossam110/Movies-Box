@@ -9,7 +9,7 @@ export default function HomeCard({reqData,direction}) {
     let media = direction;
   return (
     <>
-      <div className="col-md-2 col-sm-3 mt-3">
+      <div className="col-lg-2 mt-3">
                         <Link to={`/${media}Details/${media}/${data.id}`} className="text-decoration-none text-light">
                            <div className={`${media}sContent border rounded border-light text-light mb-3`}>
                              <div className={`${styles.imgLayer}`}>
