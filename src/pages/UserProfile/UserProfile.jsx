@@ -16,7 +16,7 @@ export default function UserProfile() {
      </Helmet>
    <section className={style.section}>
       <div className={style.navFix}>
-        <div className="container">
+        <div className="container" style={{height:'100lvh'}}>
           <div className="row">
 
             <div className={`${styles.Container} px-1 mt-3`}>
