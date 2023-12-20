@@ -10,10 +10,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash , faEye} from "@fortawesome/free-solid-svg-icons";
 import style from '../index.module.css';
 import styles from './Registration.module.css';
+import { useAuth } from '../../context/AuthContext';
 
 export default function SignUp() {
   // use navigate to redirect the user to some page 
   let navigate = useNavigate();
+
+  const { saveUserToken }= useAuth();
 
   // base state to collect user data 
   let [user,setUser]=useState(
@@ -23,7 +26,7 @@ export default function SignUp() {
        age:0,
        email:'',
        password:'',
-       favorites:[]   
+       favorites:[]  
       }
     );
 
@@ -89,6 +92,7 @@ export default function SignUp() {
             "number.base":"Age must be a Number!",
             "number.min":"Age must be greater than or equal to 16!"     
           }),
+          favorites: Joi.allow(),
       }
     )
       
@@ -115,7 +119,8 @@ export default function SignUp() {
           setIsLoading(true);
           // sending new user data to backend 
           let response = await postData(`https://movies-app-backend-1fxl.onrender.com/users`,user);
-          // console.log(response.data);
+          console.log(response.data);
+          console.log(response.status);
           
           // if the data successfully sent to the backend
           if(response.status === 201){
@@ -124,6 +129,8 @@ export default function SignUp() {
             console.log('Signed Up!!');
             // to keep user logged in in we must save some of his info into the local storage ( Token )
             localStorage.setItem('UserInfo',JSON.stringify(response.data));
+            // we save the user data token to App component so we can use it in the rest of components
+            saveUserToken();
             // redirect user to login page
             navigate('/login');
           }else{

@@ -19,10 +19,9 @@ export async function addToFav(userToken, newFav,saveUserToken) {
       };
     })
 
-   //  console.log("kkk",newUserFav)
    await  patchData(`https://movies-app-backend-1fxl.onrender.com/users/${userData.id}`, newUserFav).then(
       (res) => {
-        console.log("response from patch",res.data);
+        // console.log("response from patch",res.data);
         console.log("Added to Favorite!!");
         // to update the user token in the rest of the components
         localStorage.setItem("UserInfo", JSON.stringify(res.data));

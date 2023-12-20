@@ -106,7 +106,7 @@ export default function LayoutBox({reqData,page}) {
 
            <div className="d-flex justify-content-center mt-2"> 
 
-           { userFavorites.find((fav)=> data.id === fav.id) ?
+           { userFavorites?.find((fav)=> data.id === fav.id) ?
              
              <Button className={`btn btn-danger w-100`}  onClick={()=>{
                  removeFav(userToken,data,saveUserToken); 

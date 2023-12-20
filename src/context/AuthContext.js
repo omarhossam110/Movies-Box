@@ -45,13 +45,15 @@ export function AuthContextProvider(props) {
 
   // to represent the user data in the website we must save it here,
   // so all the components can see it.  
-  function saveUserToken(){
+ async function saveUserToken(){
     // we get the user here from Login component   
     let token = localStorage.getItem('UserInfo');
     // here we use jwt_decode to resolve the token
     // jwt_decode(token) => decoded token
-     setUserToken(token);
-     console.log('from authContext', userToken);
+   
+    await setUserToken(token);
+    //  console.log('save after set', token);
+    //  console.log('token after set', userToken);
   }
 
   
