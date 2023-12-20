@@ -147,7 +147,7 @@ export default function SignUp() {
      <Helmet>
         <title>SignUp | MovieBox</title>
      </Helmet>
-    <section className={style.section}>
+    <section className={style.section} style={{height:'100lvh'}}>
       <div className={style.navFix}>
          <div className="container">
         <div className={styles.section}>

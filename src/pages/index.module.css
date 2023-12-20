@@ -3,7 +3,6 @@
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('../assets/movie.jpg') fixed center center;
     background-size: cover;
-    height: 100lvh;
 }
 
 .navFix{
