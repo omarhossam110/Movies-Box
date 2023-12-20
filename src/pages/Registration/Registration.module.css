@@ -1,3 +1,14 @@
+.section{
+  padding: 6.5rem 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: cont 10000ms ease-in-out infinite alternate;
+}
+
 .form_container{
     width: 35%;
     background-color: rgba(0, 0, 0, 0.7);
