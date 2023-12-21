@@ -38,13 +38,14 @@ export default function NavBar(){
   return (
       <Navbar collapseOnSelect expanded={expanded} expand="lg"
         className={`${styles.model} ${scrollDown? styles.modelMove:null} navbar-dark`}>   
-        <Container>
+        <div className='container-fluid'>
 
           <Link className="navbar-brand" to="">
            <h2>MoviesBox</h2>
           </Link>
 
-          <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} 
+          className={styles.optionsIcon} aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" 
               className={`${styles.collapse} ${scrollDown? styles.collapseColor:null}`}>
                   
@@ -117,7 +118,7 @@ export default function NavBar(){
               }
              
         </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     );
   }

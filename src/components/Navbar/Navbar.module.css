@@ -44,6 +44,10 @@
     color: #bb8c00;
 }
 
+.optionsIcon{
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
 
 
 @media only screen and (max-width: 992px) {

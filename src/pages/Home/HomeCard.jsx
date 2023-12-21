@@ -11,7 +11,7 @@ export default function HomeCard({reqData,direction}) {
     <>
       <div className="col-lg-2 mt-3">
                         <Link to={`/${media}Details/${media}/${data.id}`} className="text-decoration-none text-light">
-                           <div className={`${media}sContent border rounded border-light text-light mb-3`}>
+                           <div className={`${media}sContent border rounded border-light text-light`}>
                              <div className={`${styles.imgLayer}`}>
                                 <img src={`https://image.tmdb.org/t/p/w500/${data.poster_path ||  data.profile_path}`} 
                                      alt={data.name || data.title} className='w-100 rounded' />
@@ -29,8 +29,8 @@ export default function HomeCard({reqData,direction}) {
 
                                     </div>
                              </div>
-                             {/* <h6 className=' mt-2'>{data.title || data.name}</h6> */}
                           </div>
+                             <h5 className='mt-1 mb-3'>{data.title || data.name}</h5>
                         </Link>
                     </div>
     </>
