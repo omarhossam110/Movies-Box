@@ -69,7 +69,6 @@ export default function SignUp() {
     let schema = Joi.object(
       {
           first_name:Joi.string().min(3).max(10).alphanum().required()
-          .pattern(new RegExp(/^[a-zA-Z][a-zA-Z0-9-_]{2,30}$/))
           .messages({
             "string.empty":"First Name is required!",
             "string.min":"Name must be 3 characters at least!"
@@ -83,7 +82,7 @@ export default function SignUp() {
           .messages({
             "string.empty":"Email is required!"   
           }),
-          password: Joi.string().pattern(new RegExp(/^[a-zA-Z0-9-_#@%!]{8,}$/)).required()
+          password: Joi.string().required()
           .messages({
             "string.empty":"Password is required!",
             "string.pattern.base":"Password must be at least 8 characters!"
