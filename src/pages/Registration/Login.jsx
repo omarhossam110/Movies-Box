@@ -120,10 +120,10 @@ export default function Login() {
         <title>Login | MovieBox</title>
      </Helmet>
 
-    <section className={style.section} style={{height:'100lvh'}}>
+    <section className={style.section}>
       <div className={style.navFix}>
         <div className="container">
-         <div className={styles.section}>
+         <div className={styles.section} style={{height:'100lvh'}}>
             <div className={`${styles.form_container}`}>
             
                 <h2 className="">Login Now!</h2>
