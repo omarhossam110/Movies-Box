@@ -14,9 +14,9 @@ export default function UserProfile() {
    <Helmet>
         <title>{userData.first_name}'s profile | MovieBox</title>
      </Helmet>
-   <section className={style.section}>
+   <section className={style.section} style={{height:'100lvh'}}>
       <div className={style.navFix}>
-        <div className="container" style={{height:'100lvh'}}>
+        <div className="container" >
           <div className="row">
 
             <div className={`${styles.Container} px-1 mt-3`}>

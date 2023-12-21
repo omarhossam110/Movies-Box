@@ -29,7 +29,7 @@ export default function BackToTop() {
                 right:"2rem",
                 height:"3rem",
                 width:"3rem",
-                fontSize:"29px",
+                fontSize:"30px",
                 background:"linear-gradient(45deg, #0b0020, #107f83)",
                 border: "1px",
                 borderStyle:"solid",

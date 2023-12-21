@@ -44,6 +44,9 @@
 .boxDate {
   font-size: 12px;
 }
+.popUp_section{
+  margin: auto 0;
+}
 
 .popUp {
   background-color: #000 !important;

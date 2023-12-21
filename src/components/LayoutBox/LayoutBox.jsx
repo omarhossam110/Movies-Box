@@ -138,7 +138,7 @@ export default function LayoutBox({reqData,page}) {
            </div>
 
 
-            <Modal show={showPopUp} onHide={handleClosePopUp}>
+            <Modal show={showPopUp} onHide={handleClosePopUp} className={styles.popUp_section}>
               <Modal.Header className={styles.popUp} closeButton>
                 <Modal.Title></Modal.Title>
               </Modal.Header>
