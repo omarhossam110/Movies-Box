@@ -36,17 +36,23 @@ export default function DataDetails() {
             {dataDetails ? (
 
           <div className="container">
-            <div className="d-flex align-items-center justify-content-center" style={{height:'100lvh'}}>
-                         <div className="me-3" style={{width:'33%'}}>
-                           <img className="card w-100 rounded" alt={dataDetails.name || dataDetails.title}
-                            src={`https://image.tmdb.org/t/p/w500/${dataDetails.poster_path ||  dataDetails.profile_path}`}/>
-                         </div>                   
-                         
+            <div className="d-flex align-items-center justify-content-center" style={{height:'100lvh',fontSize:'1.8rem'}}>
+                 
+                  
+                       
+                <div className="me-3" style={{width:'33%'}}>
+                    <img className="card w-100 rounded" alt={dataDetails.name || dataDetails.title}
+                        src={`https://image.tmdb.org/t/p/w500/${dataDetails.poster_path ||  dataDetails.profile_path}`}/>
+                </div>                   
+      
+
+                
+                       
                 <div className={`${styles.data_container}`}>
                       <div className={`${styles.contentDetails}`}>
                         <div>
                           {/* Movies / TV / Person APIs */}
-                          <h2>{dataDetails.original_title || dataDetails.name}</h2>
+                          <h2 style={{fontSize:'3rem'}}>{dataDetails.original_title || dataDetails.name}</h2>
                           <p>{dataDetails.tagline}</p>
                           
                           {/* Movies / TV  APIs */}
@@ -57,14 +63,14 @@ export default function DataDetails() {
                           ))}
 
                           {/* Movies / TV  APIs */}
-                          {dataDetails.vote_count? <h5 className="mt-3">Vote Count: {dataDetails.vote_count}</h5>
+                          {dataDetails.vote_count? <p className="mt-3">Vote Count: {dataDetails.vote_count}</p>
                             :null}
 
-                          {dataDetails.popularity? <h5 className="mt-3">Popularity: {dataDetails.popularity}</h5>
+                          {dataDetails.popularity? <p className="mt-3">Popularity: {dataDetails.popularity}</p>
                             :null}     
                           
                           {/* Movies API */}
-                          {dataDetails.release_date? <h5 className="mt-3">Release Date: {dataDetails.release_date}</h5>
+                          {dataDetails.release_date? <p className="mt-3">Release Date: {dataDetails.release_date}</p>
                             :null}
 
                           {/* TV API */}
@@ -81,6 +87,7 @@ export default function DataDetails() {
                       </div>
                  
                 </div>
+                
               </div>
           </div>
 

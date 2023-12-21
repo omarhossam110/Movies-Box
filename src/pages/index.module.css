@@ -6,11 +6,13 @@
 }
 
 .navFix{
-    margin-top: 7rem;
+    margin-top: 11.2rem;
+    /*   7 * 16 = 112 , 11.2rem  */
 }
    
 .section_title{
     color: #ffca2c;
     display: inline-block;
     text-transform: capitalize;
+    font-size: 3rem;
 }

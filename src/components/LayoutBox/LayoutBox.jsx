@@ -27,7 +27,7 @@ export default function LayoutBox({reqData,page}) {
 
   const addedNotify = ()=>{
     toast.success('Added Successfully!', {
-      position: "bottom-left",
+      position: "top-left",
       autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -90,25 +90,25 @@ export default function LayoutBox({reqData,page}) {
 
             {/* Movies API */}
             { data.release_date?
-                 <h5 className={`${styles.boxDate} mb-3`}>Date of Release: {data.release_date}</h5> : null}
+                 <h6 className={`${styles.boxDate} mb-3`}>Date of Release: {data.release_date}</h6> : null}
            
             {/* TV API */}
             { data.first_air_date?
-                 <h5 className={`${styles.boxDate} mb-3`}>First Air Date: {data.first_air_date} </h5> : null }
+                 <h6 className={`${styles.boxDate} mb-3`}>First Air Date: {data.first_air_date} </h6> : null }
 
            
              <div className="d-flex justify-content-center mt-2">
-             <Button className={`btn btn-light w-100`} onClick={handleMorePopUp}>
+             <Button style={{fontSize:'1.6rem'}} className={`btn btn-light w-100`} onClick={handleMorePopUp}>
                More..
              </Button>
            </div> 
 
 
-           <div className="d-flex justify-content-center mt-2"> 
+           <div className="d-flex justify-content-center mt-3"> 
 
            { userFavorites?.find((fav)=> data.id === fav.id) ?
              
-             <Button className={`btn btn-danger w-100`}  onClick={()=>{
+             <Button style={{fontSize:'1.6rem'}} className={`btn btn-danger w-100`}  onClick={()=>{
                  removeFav(userToken,data,saveUserToken); 
                  removeNotify();    
                  }}> Remove Favorite
@@ -116,7 +116,7 @@ export default function LayoutBox({reqData,page}) {
              
              :                           
              
-              <Button className={`btn btn-success w-100`} onClick={()=>{
+              <Button style={{fontSize:'1.6rem'}} className={`btn btn-success w-100`} onClick={()=>{
                 addToFav(userToken,data,saveUserToken);
                 addedNotify()   
               }}>
@@ -178,7 +178,7 @@ export default function LayoutBox({reqData,page}) {
               </Modal.Body>
 
               <Modal.Footer className={styles.popUp}>
-                <Button variant="secondary" onClick={handleClosePopUp}>
+                <Button style={{fontSize:'1.6rem'}} variant="secondary" onClick={handleClosePopUp}>
                   Close
                 </Button>
               </Modal.Footer>

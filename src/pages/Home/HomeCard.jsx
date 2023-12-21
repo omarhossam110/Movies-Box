@@ -30,7 +30,7 @@ export default function HomeCard({reqData,direction}) {
                                     </div>
                              </div>
                           </div>
-                             <h5 className='mt-1 mb-3'>{data.title || data.name}</h5>
+                             <h5 style={{fontSize:'1.6rem'}} className='text-center mt-1 mb-3'>{data.title || data.name}</h5>
                         </Link>
                     </div>
     </>

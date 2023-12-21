@@ -16,7 +16,8 @@
   content: "";
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 1.8rem;
+  /*   1.8rem  */
   justify-content: center;
   left: 0;
   letter-spacing: 1px;
@@ -29,6 +30,10 @@
   transition: all 1s;
 }
 
+.overLayer h6{
+  font-size: 1.8rem;
+}
+
 .imgLayer:hover .overLayer {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -39,17 +44,36 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 2rem;
 }
 
 .boxDate {
-  font-size: 12px;
+  font-size: 1.3rem;
+  /*  1.2rem  */
 }
-.popUp_section{
+/* .popUp_section{
   margin: auto 0;
-}
+} */
 
 .popUp {
   background-color: #000 !important;
   color: antiquewhite !important;
   border-color: transparent !important;
+  padding: 1rem;
+}
+
+.popUp h3{
+  font-size: 3rem;
+}
+
+.popUp h4{
+  font-size: 2rem;
+}
+
+.popUp h5{
+  font-size: 1.8rem;
+}
+
+.popUp p{
+  font-size: 1.6rem;
 }

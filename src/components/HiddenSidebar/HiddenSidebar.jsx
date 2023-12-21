@@ -34,9 +34,9 @@ export default function HiddenSidebar({ pageName ,sidebarData, changeType }) {
       </button>
       <Offcanvas show={show} onHide={handleClose} className={`bg-black ${scrollDown? styles.canvasColor:null}`}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title className="text-light">{pageName} Categories</Offcanvas.Title>
+          <Offcanvas.Title className="text-light" style={{fontSize:'2rem'}}>{pageName} Categories</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body >
+        <Offcanvas.Body className="d-flex align-items-center">
           <div className={`${styles.sidebar}`}>
             {sidebarData.map((bar, index) => (
               <p key={index} id={bar.id} onClick={() => changeType(bar.id)}

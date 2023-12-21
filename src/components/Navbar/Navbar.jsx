@@ -87,7 +87,7 @@ export default function NavBar(){
                     </p>
                   </Nav.Link>
                   <Nav.Link className="nav-item p-2">
-                    <button className="btn btn-light d-flex m-md-auto m-sm-auto" 
+                    <button style={{fontSize:'1.6rem'}} className="btn btn-light d-flex m-md-auto m-sm-auto" 
                             onClick={()=>{
                               logOut();
                               setExpanded(expanded ? false : "expanded");

@@ -12,12 +12,8 @@
     cursor: pointer;
     margin: 10px 0;
     transition: all .2s ease-in;
-   
+    font-size: 1.6rem;
 }
-
-/* .sidebar_link:not(:last-child){
-    border-bottom: 1px solid #777;
-} */
 
 .sidebar_link:hover{
     background-color: #0e0e0e; 

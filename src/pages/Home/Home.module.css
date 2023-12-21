@@ -20,8 +20,12 @@
     position: absolute;
     width: 300px;
 }
+.home_section_intro h2{
+  font-size: 3rem;
+}
 .home_section_intro h3{
   color: #ffca2c;
+  font-size: 1.8rem;
 }
 
 .imgLayer {
@@ -36,7 +40,8 @@
     content: "";
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 1.8rem;
+    /* 1.8rem */
     justify-content: center;
     left: 0;
     letter-spacing: 1px;
@@ -47,6 +52,10 @@
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     transition: all 1s;
+  }
+  
+  .overLayer h6{
+    font-size: 1.8rem;
   }
   
   .imgLayer:hover .overLayer {

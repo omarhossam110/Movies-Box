@@ -1,19 +1,24 @@
 .model{
     position: fixed !important;
-    height: 92px;
-    padding: 30px 0 !important;
+    height: 9.2rem;
+    /*   9.2rem  */
+    padding: 3rem 0 !important;
+    /*   3rem  */
     left: 0;
     top: 0;
     right: 0;
     transition: all 0.5s;
     z-index: 997;
     background-color: rgba(0, 0, 0, 0.3) !important;
+    font-size: 1.8rem;
 }
 
 .modelMove{
     background: linear-gradient(45deg, #0b0020, #107f83) !important;
-    padding: 20px 0 !important;
-    height: 72px;
+    padding: 2rem 0 !important;
+    /*   2rem  */
+    height: 7.2rem;
+    /*   7.2rem  */
     transition: all 0.5s;
 }
 .navbar_link{
@@ -45,7 +50,8 @@
 }
 
 .optionsIcon{
-    font-size: 1.4rem;
+    font-size: 2rem;
+    /*   2rem  */
     margin-bottom: 5px;
 }
 

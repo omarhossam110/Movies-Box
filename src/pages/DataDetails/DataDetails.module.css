@@ -1,5 +1,5 @@
 .section{
-  padding: 6.5rem 0;
+  padding: 10.4rem 0;
   overflow: hidden;
 
   display: flex;
@@ -10,10 +10,11 @@
 }
 
 .data_container{
-    width: 70%;
+    width: 88rem;
+    /*   55 * 16 = 880 , 88rem  */
     display: flex;
     border-radius: 5px;
-    padding: 1.4rem;
+    padding: 2rem;
     background-color: rgba(0, 0,0, .5);
     box-shadow: rgb(171 169 171) 0px 0px 5px 0px;
 }
@@ -23,17 +24,3 @@
   align-items: center;
    /* background-color: rgba(33, 37, 41, .9); */
 }
-
-
-
-@media only screen and (max-width: 992px) {
-    .form_container{
-       width: 45%;
-     }
-   }
-
-   @media only screen and (max-width: 768px) {
-    .form_container{
-       width: 60%;
-     }
-   }

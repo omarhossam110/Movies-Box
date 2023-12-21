@@ -71,11 +71,9 @@ export default function TvShow() {
                         <LayoutBox key={index} reqData={reqShow} page='tvShows'/>
                       ))}
 
-                    <div className="d-flex justify-content-center mt-4">
-                      <Pagination paginate={changePage} />
-                    </div>
                   </div>
                 </div>
+                <Pagination paginate={changePage} />
               </div>
             </div>
           </div>

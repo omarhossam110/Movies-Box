@@ -70,12 +70,11 @@ export default function Movies() {
                       movieList?.results?.map((reqMovie, index) => (
                         <LayoutBox key={index} reqData={reqMovie} page='movies' />
                       ))}
-
-                    <div className="d-flex justify-content-center mt-4">
-                      <Pagination paginate={changePage} />
-                    </div>
+                                    
                   </div>
                 </div>
+
+                <Pagination paginate={changePage} />
               </div>
             </div>
           </div>

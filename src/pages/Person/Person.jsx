@@ -44,11 +44,9 @@ export default function Person() {
                         <LayoutBox key={index} reqData={reqPerson} page='persons' />
                       ))}
 
-                    <div className="d-flex justify-content-center mt-4">
-                      <Pagination paginate={changePage} />
-                    </div>
                   </div>
                 </div>
+                <Pagination paginate={changePage} />
               </div>
             </div>
           </div>

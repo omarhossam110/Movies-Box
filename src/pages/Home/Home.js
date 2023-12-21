@@ -39,7 +39,7 @@ export default function Home() {
 
     <section className={`${style.section}`}>
       <div className={style.navFix}>
-           <div className="container mt-4 mb-5"> 
+        <div className="container mt-4"> 
          <div className="row">        
            <div className="col-lg-4 col-sm-12 d-flex align-items-center mt-5 mb-3">
                  <HomeIntro reqData={introData[0]} />
@@ -52,12 +52,10 @@ export default function Home() {
                 && movieList.results?.slice(0,10)?.map((movie, index) => (
                 <HomeCard key={index} reqData={movie} direction={'movie'} />)) }  
          </div>
-      </div>
-      </div>
+        </div>
      
-
-      <div className="container">
-         <div className="row border-top">
+        <div className="container">
+         <div className="row pt-5 border-top">
              <div className="col-lg-4 d-flex align-items-center mt-5 mb-4">
                 <HomeIntro reqData={introData[1]} />
               </div>
@@ -69,11 +67,10 @@ export default function Home() {
                 && tvList.results?.slice(0,10)?.map((show, index) => (
                 <HomeCard key={index} reqData={show} direction={'tv'} />)) }            
         </div>
-      </div>
+        </div>
 
-
-      <div className="container mb-5">
-        <div className="row border-top mt-5">
+        <div className="container mb-5">
+        <div className="row border-top mt-5 pt-5">
             <div className="col-lg-4 d-flex align-items-center mt-5">
               <HomeIntro reqData={introData[2]} />
             </div>
@@ -85,9 +82,10 @@ export default function Home() {
                 && personList.results?.slice(0 , 10)?.map((person, index) => (
                 <HomeCard key={index} reqData={person} direction={'person'} />)) }             
         </div>
-      </div>
+        </div>
 
-      <BackToTop />
+        <BackToTop />
+      </div>
     </section>   
     </>
   );
