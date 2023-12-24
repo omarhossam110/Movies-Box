@@ -5,7 +5,7 @@ export default function HomeIntro(props) {
     let introData = props.reqData;
   return (
     <> 
-        <div className={`${styles.home_section_intro}`}>
+        <div className={`${styles.home_section_intro} mt-2 mb-4`}>
             <h2>{introData.header}</h2>
             <h3 class="w-75">{introData.paragraph}</h3>
         </div>

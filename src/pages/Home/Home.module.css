@@ -63,3 +63,20 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
+  .cardTitle{
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .home_section_intro h2{
+      font-size: 5rem;
+    }
+    .home_section_intro h3{
+      font-size: 3rem;
+    }
+
+    .cardTitle{
+      font-size: 3rem;
+    }
+   }
