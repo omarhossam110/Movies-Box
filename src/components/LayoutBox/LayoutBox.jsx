@@ -97,8 +97,8 @@ export default function LayoutBox({reqData,page}) {
                  <h6 className={`${styles.boxDate} mb-3`}>First Air Date: {data.first_air_date} </h6> : null }
 
            
-             <div className="d-flex justify-content-center mt-2">
-             <Button style={{fontSize:'1.6rem'}} className={`btn btn-light w-100`} onClick={handleMorePopUp}>
+             <div className={`d-flex justify-content-center mt-2`}>
+             <Button className={`${styles.cardBtn}  btn btn-light w-100`} onClick={handleMorePopUp}>
                More..
              </Button>
            </div> 
@@ -108,7 +108,7 @@ export default function LayoutBox({reqData,page}) {
 
            { userFavorites?.find((fav)=> data.id === fav.id) ?
              
-             <Button style={{fontSize:'1.6rem'}} className={`btn btn-danger w-100`}  onClick={()=>{
+             <Button className={`${styles.cardBtn} btn btn-danger w-100`}  onClick={()=>{
                  removeFav(userToken,data,saveUserToken); 
                  removeNotify();    
                  }}> Remove Favorite
@@ -116,7 +116,7 @@ export default function LayoutBox({reqData,page}) {
              
              :                           
              
-              <Button style={{fontSize:'1.6rem'}} className={`btn btn-success w-100`} onClick={()=>{
+              <Button className={`${styles.cardBtn} btn btn-success w-100`} onClick={()=>{
                 addToFav(userToken,data,saveUserToken);
                 addedNotify()   
               }}>

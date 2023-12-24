@@ -55,6 +55,10 @@
   margin: auto 0;
 } */
 
+.cardBtn{
+  font-size: 1.6rem !important;
+}
+
 .popUp {
   background-color: #000 !important;
   color: antiquewhite !important;
@@ -77,3 +81,25 @@
 .popUp p{
   font-size: 1.6rem;
 }
+
+
+@media only screen and (max-width: 992px) {
+  .overLayer {
+    font-size: 2.4rem;
+  }
+
+  .overLayer h6{
+    font-size: 2.4rem;
+  }
+
+  .boxTitle{
+    font-size: 4rem;
+  }
+  .boxDate {
+    font-size: 2rem;
+    margin-bottom: 3.4rem !important;
+  }
+  .cardBtn{
+    font-size: 2.5rem !important;
+  }
+ }

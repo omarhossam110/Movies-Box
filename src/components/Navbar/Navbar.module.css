@@ -13,6 +13,10 @@
     font-size: 1.8rem;
 }
 
+.brand{
+    font-size: 3.5rem;
+}
+
 .modelMove{
     background: linear-gradient(45deg, #0b0020, #107f83) !important;
     padding: 2rem 0 !important;
@@ -50,13 +54,21 @@
 }
 
 .optionsIcon{
-    font-size: 2rem;
+    font-size: 2rem !important;
     /*   2rem  */
     margin-bottom: 5px;
 }
 
+.userName{font-size: 1.6rem !important;}
+
+.logOut{font-size: 1.6rem !important;}
+
 
 @media only screen and (max-width: 992px) {
+    .brand{
+        font-size: 4.2rem;
+    }
+
     .collapse{
         /* width: 100%; */
         padding: 5px;
@@ -67,5 +79,28 @@
     .collapseColor{
         background: linear-gradient(45deg, #0b0020, #107f83); 
     }
+
+    .optionsIcon{
+        font-size: 3rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    .modelMove{
+        background: linear-gradient(45deg, #0b0020, #107f83) !important;
+        padding: 2rem 0 !important;
+        /*   2rem  */
+        height: 9.2rem;
+        /*   7.2rem  */
+        transition: all 0.5s;
+    }
+
+    .navbar_link{
+        font-size: 3rem !important;
+    }   
+    
+    .userName{
+        font-size: 3rem !important;
+    }
    
+    .logOut{font-size: 2.6rem !important;}
    }

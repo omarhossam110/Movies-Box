@@ -40,7 +40,7 @@ export default function NavBar(){
         <div className='container-fluid'>
 
           <Link className="navbar-brand" to="">
-           <h2>MoviesBox</h2>
+           <h2 className={styles.brand}>MoviesBox</h2>
           </Link>
 
           <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} 
@@ -79,7 +79,7 @@ export default function NavBar(){
 
                  <Nav className="navbar-nav mb-2 mb-lg-0 ms-auto">
                   <Nav.Link className="nav-item d-flex align-items-center m-md-auto m-sm-auto">
-                    <p className="mb-lg-0 me-lg-3">Welcome &nbsp;
+                    <p className={`${styles.userName} mb-lg-0 me-lg-3`}>Welcome &nbsp;
                       <Link onClick={() => setExpanded(expanded ? false : "expanded")}
                        to='/profile' className={styles.profile_link}>
                          {JSON.parse(userToken).first_name.toUpperCase()}
@@ -87,7 +87,7 @@ export default function NavBar(){
                     </p>
                   </Nav.Link>
                   <Nav.Link className="nav-item p-2">
-                    <button style={{fontSize:'1.6rem'}} className="btn btn-light d-flex m-md-auto m-sm-auto" 
+                    <button className={`${styles.logOut} btn btn-light d-flex m-md-auto m-sm-auto`} 
                             onClick={()=>{
                               logOut();
                               setExpanded(expanded ? false : "expanded");
