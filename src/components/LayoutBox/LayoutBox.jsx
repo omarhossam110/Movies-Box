@@ -161,10 +161,10 @@ export default function LayoutBox({reqData,page}) {
                   {data.vote_average ? <h4>IMDb: {data.vote_average.toFixed(1)}</h4> : null}
 
                   {/* Movies API */}
-                  {data.release_date ? <h5>Date of Release: {data.release_date}</h5> : null}
+                  {data.release_date ? <h4>Date of Release: {data.release_date}</h4> : null}
 
                   {/* TV API */}
-                  {data.first_air_date ? <h5>First Air Date: {data.first_air_date}</h5> : null}
+                  {data.first_air_date ? <h4>First Air Date: {data.first_air_date}</h4> : null}
                   
                   {/* Person API */}
                   {data.known_for_department ? <h4>Department: {data.known_for_department}</h4> :null}

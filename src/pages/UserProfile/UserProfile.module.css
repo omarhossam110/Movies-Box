@@ -4,7 +4,6 @@
     /* background: rgba(0, 0, 0, .6); */
     /* height: 100%; */
     /* box-shadow: rgb(171 169 171) 0px 0px 3px 0px; */
-    overflow: auto;
     min-height: calc(100vh - 25%) !important;
 }
 
@@ -52,16 +51,26 @@
 
 
 @media only screen and (max-width: 992px) {
-    .Header h1{
+.Header h1{
     font-size: 4.5rem;
 }
 
 .Header h2{
-    font-size: 3.8rem;
+    font-size: 5rem;
+    margin-left: 1rem;
+}
+
+.Box{
+    height: 12rem;
+    width: 12rem;
 }
 
 .Description{
-    font-size: 1.9rem !important;
+    font-size: 2rem !important;
+}
+
+.Description h2{
+    font-size: 3rem;
 }
 
 }

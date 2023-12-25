@@ -50,7 +50,7 @@ export default function NavBar(){
                   
              {userToken ? 
                <>
-                 <Nav className="navbar-nav mb-2 mb-lg-0">
+                 <Nav className="navbar-nav mb-5 mb-lg-0">
                   <Nav.Link onClick={() => setExpanded(expanded ? false : "expanded")}
                   className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
                     <Link className="nav-link text-center" to="">
@@ -79,7 +79,7 @@ export default function NavBar(){
 
                  <Nav className="navbar-nav mb-2 mb-lg-0 ms-auto">
                   <Nav.Link className="nav-item d-flex align-items-center m-md-auto m-sm-auto">
-                    <p className={`${styles.userName} mb-lg-0 me-lg-3`}>Welcome &nbsp;
+                    <p className={`${styles.userName} mb-lg-0 me-lg-3 mb-5`}>Welcome &nbsp;
                       <Link onClick={() => setExpanded(expanded ? false : "expanded")}
                        to='/profile' className={styles.profile_link}>
                          {JSON.parse(userToken).first_name.toUpperCase()}

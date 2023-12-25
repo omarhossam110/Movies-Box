@@ -107,4 +107,26 @@
   .cardBtn{
     font-size: 2.5rem !important;
   }
+
+  .popUp {
+    padding: 5rem !important;
+  }
+
+  .popUp h3{
+    font-size: 5rem;
+  }
+  
+  .popUp h4{
+    font-size: 3.4rem;
+  }
+  
+  .popUp h5{
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .popUp p{
+    font-size: 2.4rem;
+  }
+  
  }

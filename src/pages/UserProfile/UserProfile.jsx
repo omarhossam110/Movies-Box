@@ -2,6 +2,7 @@ import React from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { Helmet } from 'react-helmet';
 
+import BackToTop from "./../../components/BackToTop/BackToTop"
 import LayoutBox from './../../components/LayoutBox/LayoutBox';
 import style from '../index.module.css';
 import styles from './UserProfile.module.css';
@@ -46,7 +47,7 @@ export default function UserProfile() {
                 </div>
 
                 <div className="mt-4">
-                <h2 className="primary-text mb-4">Your Favorites:</h2>
+                <h2 className="primary-text mb-5">Your Favorites:</h2>
 
                     <div class="container">
                         <div className="row">
@@ -72,6 +73,7 @@ export default function UserProfile() {
           </div>
         </div>
       </div>
+      <BackToTop />
    </section>   
   </>
   )
