@@ -102,10 +102,11 @@
   }
   .boxDate {
     font-size: 2rem;
-    margin-bottom: 3.4rem !important;
+    margin-bottom: 4rem !important;
   }
   .cardBtn{
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
+    margin-bottom: 2rem;
   }
 
   .popUp {

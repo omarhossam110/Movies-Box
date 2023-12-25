@@ -90,11 +90,11 @@ export default function LayoutBox({reqData,page}) {
 
             {/* Movies API */}
             { data.release_date?
-                 <h6 className={`${styles.boxDate} mb-3`}>Date of Release: {data.release_date}</h6> : null}
+                 <h6 className={`${styles.boxDate}`}>Date of Release: {data.release_date}</h6> : null}
            
             {/* TV API */}
             { data.first_air_date?
-                 <h6 className={`${styles.boxDate} mb-3`}>First Air Date: {data.first_air_date} </h6> : null }
+                 <h6 className={`${styles.boxDate}`}>First Air Date: {data.first_air_date} </h6> : null }
 
            
              <div className={`d-flex justify-content-center mt-2`}>

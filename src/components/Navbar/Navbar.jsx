@@ -86,7 +86,7 @@ export default function NavBar(){
                       </Link>
                     </p>
                   </Nav.Link>
-                  <Nav.Link className="nav-item p-2">
+                  <Nav.Link className="nav-item p-2 mt-4 m-lg-0">
                     <button className={`${styles.logOut} btn btn-light d-flex m-md-auto m-sm-auto`} 
                             onClick={()=>{
                               logOut();
