@@ -36,8 +36,8 @@ export default function UserProfile() {
                 </div>
 
                 <div className={`${styles.Description} px-4 pb-1 pa-m-0 mt-m-0 mt-m-0`}>
-                    <div className="brand-heading mt-4 mb-2">
-                        <h2 className="primary-text fs-5 fw-bold">Profile Details</h2>
+                    <div className={`${styles.profileHeading}`}>
+                        <h2 className="primary-text">Profile Details</h2>
                         <div className="mt-3 ms-1">
                           <p>Email: &nbsp;{userData?.email}</p>
                            <p>Age:  &nbsp;{userData?.age}</p>
@@ -45,8 +45,8 @@ export default function UserProfile() {
                     </div>
                 </div>
 
-                <div className="brand-best-dishes mt-4">
-                <h2 style={{fontSize:'2rem'}} className="primary-text fw-bold">Your Favorites:</h2>
+                <div className="mt-4">
+                <h2 className="primary-text mb-4">Your Favorites:</h2>
 
                     <div class="container">
                         <div className="row">

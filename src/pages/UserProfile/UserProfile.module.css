@@ -41,6 +41,27 @@
     font-size: 1.6rem !important;
 }
 
+.profileHeading{
+    margin-top: 3rem;
+    margin-top: 1rem;
+}
+
 .Description h2{
-    font-size: 2rem !important;
+    font-size: 2.5rem;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .Header h1{
+    font-size: 4.5rem;
+}
+
+.Header h2{
+    font-size: 3.8rem;
+}
+
+.Description{
+    font-size: 1.9rem !important;
+}
+
 }

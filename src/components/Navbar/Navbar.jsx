@@ -37,7 +37,7 @@ export default function NavBar(){
   return (
       <Navbar collapseOnSelect expanded={expanded} expand="lg"
         className={`${styles.model} ${scrollDown? styles.modelMove:null} navbar-dark`}>   
-        <div className='container-fluid'>
+        <div className='container'>
 
           <Link className="navbar-brand" to="">
            <h2 className={styles.brand}>MoviesBox</h2>

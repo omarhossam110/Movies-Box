@@ -51,7 +51,7 @@ export default function Movies() {
 
               <div className="col-lg-10">
                 <div
-                  className={`${styles.movies_section} container text-light rounded-1`}
+                  className={`container text-light rounded-1`}
                 >
                   <div className="d-flex justify-content-between">
                     <h2 className={`${styles.section_title}`}>

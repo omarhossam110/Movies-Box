@@ -84,6 +84,11 @@
 
 
 @media only screen and (max-width: 992px) {
+  .LayoutBox{
+    /* margin-top: 5rem !important; */
+    margin-bottom: 3.7rem !important;
+  }
+
   .overLayer {
     font-size: 2.4rem;
   }
