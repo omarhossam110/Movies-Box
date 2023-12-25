@@ -32,23 +32,23 @@ export default function DataDetails() {
         <title>{`${dataDetails?.title || dataDetails?.name} | MovieBox`}</title>
      </Helmet>
    <section className={style.section}>
-      <div className={style.navFix}>
-            {dataDetails ? (
+    <div className={style.navFix}>
+        
+      {dataDetails ? (
 
-          <div className="container">
-            <div className="d-flex align-items-center justify-content-center" style={{height:'100lvh',fontSize:'1.8rem'}}>
-                 
-                  
+          <div className={`container`} style={{padding:'5rem 0'}}>
+            <div className={`row`} style={{fontSize:'1.8rem'}}>
+              
                        
-                <div className="me-3" style={{width:'33%'}}>
+                <div className="col-lg-4">
                     <img className="card w-100 rounded" alt={dataDetails.name || dataDetails.title}
                         src={`https://image.tmdb.org/t/p/w500/${dataDetails.poster_path ||  dataDetails.profile_path}`}/>
                 </div>                   
       
 
                 
-                       
-                <div className={`${styles.data_container}`}>
+               <div className={`col-lg-8 d-flex align-items-center`}>
+               <div className={`${styles.data_container}`}>
                       <div className={`${styles.contentDetails}`}>
                         <div>
                           {/* Movies / TV / Person APIs */}
@@ -87,6 +87,9 @@ export default function DataDetails() {
                       </div>
                  
                 </div>
+                
+               </div>         
+               
                 
               </div>
           </div>

@@ -52,7 +52,7 @@ export default function UserProfile() {
                     <div class="container">
                         <div className="row">
 
-                          <div className="col-lg-11 offset-lg-1 offset-sm-1">
+                          <div className="col-lg-11 offset-lg-1 offset-sm-1" style={{height:'100vh'}}>
                             <div className="row">
                               {userData &&
                                   userData?.favorites?.map((reqMovie, index) => (

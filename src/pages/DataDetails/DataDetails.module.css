@@ -10,8 +10,6 @@
 }
 
 .data_container{
-    width: 88rem;
-    /*   55 * 16 = 880 , 88rem  */
     display: flex;
     border-radius: 5px;
     padding: 2rem;
@@ -23,4 +21,10 @@
   display: flex;
   align-items: center;
    /* background-color: rgba(33, 37, 41, .9); */
+}
+
+@media only screen and (max-width: 992px) {
+  .fullHight{
+    height: 100vh !important;
+  }
 }
