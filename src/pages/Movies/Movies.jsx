@@ -12,7 +12,6 @@ import SearchForm from "../../components/SearchForm/SearchForm";
 import BackToTop from "../../components/BackToTop/BackToTop";
 import styles from "../index.module.css";
 
-
 export default function Movies() {
 
   const { isLoading, hasError, movieList, movieType, searchMovie, changeMoviesCategory, changePage }

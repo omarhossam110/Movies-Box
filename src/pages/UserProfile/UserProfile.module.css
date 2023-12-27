@@ -1,3 +1,7 @@
+.Content{
+ display: flex;
+}
+
 .Container{
     margin: 0px auto 20px;
     width: 106rem !important;

@@ -10,17 +10,18 @@ import styles from './UserProfile.module.css';
 export default function UserProfile() {
   const {userToken}=useAuth();
   let userData = JSON.parse(userToken);
+  let userFav = userData.favorites;
   return (
   <>
    <Helmet>
         <title>{userData.first_name}'s profile | MovieBox</title>
      </Helmet>
-   <section className={style.section} style={{height:'100vh'}}>
+   <section className={style.section}>
       <div className={style.navFix}>
-        <div className="container" >
-          <div className="row">
-
-            <div className={`${styles.Container} px-1 mt-3`}>
+        <div className={styles.Content}>
+          <div className="container" >
+           <div className="row">
+              <div className={`${styles.Container} px-1 mt-3`}>
               <div className="p-3">
 
                 <div className={`${style.section_title} ${styles.Header}`}>         
@@ -52,10 +53,10 @@ export default function UserProfile() {
                     <div class="container">
                         <div className="row">
 
-                          <div className="col-lg-11 offset-lg-1 offset-sm-1">
+                          <div className="col-lg-11 offset-lg-1 offset-sm-1" style={{height:'100vh'}}>
                             <div className="row">
-                              {userData &&
-                                  userData?.favorites?.map((reqMovie, index) => (
+                              {userFav &&
+                                  userFav?.map((reqMovie, index) => (
                                   <LayoutBox key={index} reqData={reqMovie} userToken={userToken} page='profile' />
                                ))}
                             </div> 
@@ -66,12 +67,10 @@ export default function UserProfile() {
                     
                 </div>
               </div>
-            </div>
-
-
-
+              </div>
+           </div>
           </div>
-        </div>
+        </div>     
       </div>
       <BackToTop />
    </section>   

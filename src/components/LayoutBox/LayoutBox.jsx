@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import styles from "./LayoutBox.module.css";
 
 
-export default function LayoutBox({reqData,page}) {
+export default function LayoutBox({reqData}) {
     
   let data = reqData;
 

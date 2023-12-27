@@ -49,7 +49,7 @@ function App() {
   ]}
   ]);
 
-return <> 
+return <div className="App"> 
        {/* Second step to add Routers */} 
        <AuthContextProvider>
         <ApiContextProvider>
@@ -58,7 +58,7 @@ return <>
           </HomeContextProvider>
         </ApiContextProvider> 
         </AuthContextProvider>         
-  </>
+  </div>
 }
 
 export default App;
