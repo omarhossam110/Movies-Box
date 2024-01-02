@@ -1,4 +1,5 @@
 import React,{useEffect,useState} from 'react';
+// import {ReactChildren as Back } from "../../assets/404-2.jpg"
 
 export default function BackToTop() {
 
@@ -40,6 +41,7 @@ export default function BackToTop() {
             }}
             onClick={scrollTop}
             >^</button>
+            // <Back onClick/>
         )}
 
     </> 
