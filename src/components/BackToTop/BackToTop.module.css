@@ -1,0 +1,10 @@
+
+.Btn{
+    position:fixed;
+    bottom:4.3rem;
+    right:3rem;
+    width:5rem;
+    font-size:4rem;
+    /* background:linear-gradient(45deg, #0b0020, #107f83); */
+    cursor:pointer;
+}
