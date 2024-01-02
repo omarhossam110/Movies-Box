@@ -15,19 +15,17 @@ export default function UserProfile() {
   <>
    <Helmet>
         <title>{userData.first_name}'s profile | MovieBox</title>
-     </Helmet>
+   </Helmet>
    <section className={style.section}>
       <div className={style.navFix}>
-        <div className={styles.Content}>
-          <div className="container" >
+         <div className="container" >
            <div className="row">
-              <div className={`${styles.Container} px-1 mt-3`}>
-              <div className="p-3">
-
+              <div className={`p-3 mt-3`}>
+             
                 <div className={`${style.section_title} ${styles.Header}`}>         
                       <div className="d-flex">
                        <div className="d-flex align-items-end">
-                         <div className={`${styles.Box} mb-2`}>
+                         <div className={`${styles.PicBox} mb-2`}>
                              <h1 className="text-center primary-text mt-2">P</h1>
                           </div>
                         </div>   
@@ -47,30 +45,26 @@ export default function UserProfile() {
                     </div>
                 </div>
 
-                <div className="mt-4">
-                <h2 className="primary-text mb-5">Your Favorites:</h2>
 
-                    <div class="container">
-                        <div className="row">
+                <div className="mt-4 mb-4">
+                  <h2 className="primary-text mb-5">Your Favorites:</h2> 
+                  <div className="row">
+                      <div className="col-lg-11 offset-lg-1">
 
-                          <div className="col-lg-11 offset-lg-1 offset-sm-1" style={{height:'100vh'}}>
                             <div className="row">
                               {userFav &&
                                   userFav?.map((reqMovie, index) => (
                                   <LayoutBox key={index} reqData={reqMovie} userToken={userToken} page='profile' />
                                ))}
                             </div> 
-                          </div>
-               
-                       </div>
-                    </div>
-                    
+
+
+                      </div>
+                  </div>    
                 </div>
-              </div>
               </div>
            </div>
           </div>
-        </div>     
       </div>
       <BackToTop />
    </section>   
