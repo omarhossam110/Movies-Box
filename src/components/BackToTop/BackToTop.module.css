@@ -8,3 +8,20 @@
     /* background:linear-gradient(45deg, #0b0020, #107f83); */
     cursor:pointer;
 }
+
+
+@media only screen and (max-width: 62em) { 
+    .Btn{
+        right:4.3rem;
+        width:7rem;
+        font-size:7rem;  
+    }
+ }; 
+
+ @media only screen and (max-width: 36em) { 
+    .Btn{
+        right:4.3rem;
+        width:10rem;
+        font-size:7rem;  
+    }
+ }; 
