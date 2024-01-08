@@ -53,7 +53,7 @@ export default function LayoutBox({reqData}) {
 
   return (
     <>
-      <div className="col-lg-3">
+      <div className="col-lg-3 col-md-5 offset-md-1 offset-lg-0">
         <div className={`card ${styles.LayoutBox}`}>
          
         <div className={`${styles.imgLayer}`}>
