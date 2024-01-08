@@ -1,6 +1,6 @@
 .model{
     position: fixed !important;
-    height: 9.2rem;
+    height: 8.8rem;
     /*   9.2rem  */
     padding: 3rem 0 !important;
     /*   3rem  */
@@ -14,7 +14,7 @@
 }
 
 .brand{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .modelMove{
@@ -65,8 +65,13 @@
 
 
 @media only screen and (max-width: 992px) {
+    .model{
+        height: 11rem;
+        font-size: 2rem;
+    }
+
     .brand{
-        font-size: 4.2rem;
+        font-size: 5rem;
     }
 
     .collapse{
