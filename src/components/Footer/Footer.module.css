@@ -3,14 +3,14 @@ footer{
     padding: 1rem 0;
     font-size: 1.4rem;
     color: #fff;
-    /* position: absolute; */
-    /* left: 0;
-    bottom: 0;
-    right: 0; */
 }
 
 .footerBox{
     padding: 2rem;
+}
+
+.footer__contact{
+    font-size: 2rem;
 }
 
 .footer__list {
@@ -82,3 +82,15 @@ footer{
     padding-top: 8px;
     border-top: 1px solid #777;
 }
+
+@media only screen and (max-width: 62em) { 
+    footer{
+        font-size: 2rem;
+    }
+
+    .footer__contact{
+        width: 80%;
+        display: inline-block;
+    }
+    
+ }; 
