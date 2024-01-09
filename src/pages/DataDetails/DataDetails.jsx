@@ -32,7 +32,7 @@ export default function DataDetails() {
         <title>{`${dataDetails?.title || dataDetails?.name} | MovieBox`}</title>
      </Helmet>
 
-   <section className={style.section} style={{height:'100h'}}>
+   <section>
     <div className={style.navFix}>
         
       {dataDetails ? (

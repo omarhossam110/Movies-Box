@@ -21,7 +21,7 @@ export default function Person() {
         <title>Actors & Directors | MovieBox</title>
      </Helmet>
 
-      <section className={styles.section}>
+      <section>
         <div className={styles.navFix}>
           <div className="container mt-3 mb-3">
             <div className="row">

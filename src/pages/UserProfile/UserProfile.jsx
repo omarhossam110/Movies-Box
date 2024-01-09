@@ -16,7 +16,7 @@ export default function UserProfile() {
    <Helmet>
         <title>{userData.first_name}'s profile | MovieBox</title>
    </Helmet>
-   <section className={style.section}>
+   <section>
       <div className={style.navFix}>
          <div className="container" >
            <div className="row">

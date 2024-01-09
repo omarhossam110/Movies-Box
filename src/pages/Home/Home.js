@@ -37,7 +37,7 @@ export default function Home() {
         <title>Home | MovieBox</title>
      </Helmet>
 
-    <section className={`${style.section}`}>
+    <section>
       <div className={style.navFix}>
         <div className="container mt-4"> 
          <div className="row">        

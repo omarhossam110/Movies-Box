@@ -37,7 +37,7 @@ export default function Movies() {
         changeType={changeMoviesCategory}
       />
 
-      <section className={styles.section}>
+      <section>
         <div className={styles.navFix}>
           <div className="container">
             <div className="row mt-3 mb-3">
