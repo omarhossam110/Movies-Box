@@ -63,7 +63,7 @@
   background-color: #f7f7f7 !important;
   color: #000 !important;
   border-color: transparent !important;
-  padding: 1rem;
+  padding: 4rem !important;
 }
 
 .popUp_section{
@@ -71,9 +71,14 @@
   background-color: rgba(0, 0, 0, 0.3); 
 }
 
+.popUp_img_section{
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7 !important;
+}
+
 .popUp_img{
   width: 14rem;
-  background-color: #f7f7f7 !important;
 }
 
 .popUp h3{
@@ -124,7 +129,11 @@
   }
 
   .popUp_section{
-    --bs-modal-margin: 35.75rem !important;
+    --bs-modal-margin: 45rem !important;
+  }
+  
+  .popUp_img{
+    width: 30rem;
   }
 
   .popUp h3{

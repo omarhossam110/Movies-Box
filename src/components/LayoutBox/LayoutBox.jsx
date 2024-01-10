@@ -145,7 +145,7 @@ export default function LayoutBox({reqData}) {
               <Modal.Header className={styles.popUp} closeButton>
                 <Modal.Title></Modal.Title>
               </Modal.Header>
-              <div className="d-flex justify-content-center mb-3">
+              <div className={styles.popUp_img_section}>
                   {/* Movies / TV / Person APIs */} 
                   <img src={`https://image.tmdb.org/t/p/w500/${data.poster_path ||  data.profile_path}`}
                       
