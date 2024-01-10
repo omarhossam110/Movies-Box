@@ -126,7 +126,7 @@
   }
 
   .popUp_section{
-    --bs-modal-margin: 45rem !important;
+    margin: auto !important;
   }
   
   .popUp_img{
@@ -147,7 +147,7 @@
   }
   
   .popUp p{
-    font-size: 2.4rem;
+    font-size: 3.5rem;
   }
   
  }
