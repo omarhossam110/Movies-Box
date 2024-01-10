@@ -145,15 +145,17 @@ export default function LayoutBox({reqData}) {
               <Modal.Header className={styles.popUp} closeButton>
                 <Modal.Title></Modal.Title>
               </Modal.Header>
-
-              <Modal.Body className={styles.popUp}>
-                <div className="d-flex justify-content-center mb-3">
+              <div className="d-flex justify-content-center mb-3">
                   {/* Movies / TV / Person APIs */} 
                   <img src={`https://image.tmdb.org/t/p/w500/${data.poster_path ||  data.profile_path}`}
-                      style={{width: "14rem"}}
-                      alt="..."
+                      
+                      className={styles.popUp_img}
+                      alt={data.title || data.name}
                     />
                 </div>
+
+              <Modal.Body className={styles.popUp}>
+                
 
                 <div className="text-center">
 
@@ -180,11 +182,11 @@ export default function LayoutBox({reqData}) {
                 <p>{data.overview}</p>
               </Modal.Body>
 
-              <Modal.Footer className={styles.popUp}>
+              {/* <Modal.Footer className={styles.popUp}>
                 <Button style={{fontSize:'1.6rem'}} variant="secondary" onClick={handleClosePopUp}>
                   Close
                 </Button>
-              </Modal.Footer>
+              </Modal.Footer> */}
             </Modal>
 
           </div>

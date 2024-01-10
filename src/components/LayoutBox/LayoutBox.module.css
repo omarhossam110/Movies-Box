@@ -71,6 +71,11 @@
   background-color: rgba(0, 0, 0, 0.3); 
 }
 
+.popUp_img{
+  width: 14rem;
+  margin-bottom: 2rem;
+}
+
 .popUp h3{
   font-size: 3rem;
 }
