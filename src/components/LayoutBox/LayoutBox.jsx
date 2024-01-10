@@ -40,7 +40,7 @@ export default function LayoutBox({reqData}) {
 
   const removeNotify = ()=>{
     toast.error('Removed Successfully!', {
-      position: "bottom-left",
+      position: "top-left",
       autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -108,7 +108,8 @@ export default function LayoutBox({reqData}) {
 
            { userFavorites?.find((fav)=> data.id === fav.id) ?
              
-             <Button className={`${styles.cardBtn} btn btn-danger w-100`}  onClick={()=>{
+             <Button className={`${styles.cardBtn} btn btn-danger w-100`} 
+               onClick={()=>{
                  removeFav(userToken,data,saveUserToken); 
                  removeNotify();    
                  }}> Remove Favorite
@@ -116,11 +117,11 @@ export default function LayoutBox({reqData}) {
              
              :                           
              
-              <Button className={`${styles.cardBtn} btn btn-success w-100`} onClick={()=>{
-                addToFav(userToken,data,saveUserToken);
-                addedNotify()   
-              }}>
-                Add to Favorites
+              <Button className={`${styles.cardBtn} btn btn-success w-100`}
+                onClick={()=>{
+                  addToFav(userToken,data,saveUserToken);
+                  addedNotify()   
+                  }}> Add to Favorites
               </Button> 
               
               }
@@ -179,7 +180,7 @@ export default function LayoutBox({reqData}) {
 
                 <p>{data.overview}</p>
               </Modal.Body>
-              
+
             </Modal>
 
           </div>
