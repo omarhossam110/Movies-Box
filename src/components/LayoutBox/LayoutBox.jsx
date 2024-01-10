@@ -9,6 +9,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import PopUp from "../PopUp/PopUp";
 import styles from "./LayoutBox.module.css";
 
 
@@ -101,6 +102,7 @@ export default function LayoutBox({reqData}) {
              <Button className={`${styles.cardBtn}  btn btn-light w-100`} onClick={handleMorePopUp}>
                More..
              </Button>
+             {/* <a href={data.id} class="btn btn--white">Book now!</a> */}
            </div> 
 
 
@@ -137,6 +139,7 @@ export default function LayoutBox({reqData}) {
                               theme="light" />      
            </div>
 
+           {/* <PopUp id={data.id} /> */}
 
             <Modal show={showPopUp} onHide={handleClosePopUp} className={styles.popUp_section}>
               <Modal.Header className={styles.popUp} closeButton>
