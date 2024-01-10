@@ -73,7 +73,7 @@
 
 .popUp_img{
   width: 14rem;
-  margin-bottom: 2rem;
+  background-color: #f7f7f7 !important;
 }
 
 .popUp h3{
