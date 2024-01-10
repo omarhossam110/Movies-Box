@@ -60,10 +60,15 @@
 }
 
 .popUp {
-  background-color: #000 !important;
-  color: antiquewhite !important;
+  background-color: #f7f7f7 !important;
+  color: #000 !important;
   border-color: transparent !important;
   padding: 1rem;
+}
+
+.popUp_section{
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3); 
 }
 
 .popUp h3{
@@ -111,6 +116,10 @@
 
   .popUp {
     padding: 5rem !important;
+  }
+
+  .popUp_section{
+    --bs-modal-margin: 15.75rem !important;
   }
 
   .popUp h3{
