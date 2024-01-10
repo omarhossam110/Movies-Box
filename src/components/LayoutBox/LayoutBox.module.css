@@ -126,7 +126,7 @@
   }
 
   .popUp_section{
-    --bs-modal-margin: auto !important;
+    --bs-modal-margin: 45rem !important;
   }
   
   .popUp_img{
