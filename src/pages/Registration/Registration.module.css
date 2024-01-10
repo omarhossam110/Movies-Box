@@ -1,5 +1,5 @@
 .section{
-  padding: 10.4rem 0;
+  /* padding: 10.4rem 0; */
   overflow: hidden;
 
   display: flex;
@@ -37,7 +37,6 @@
   left: 0;
   transform: translateY(-50%);
   color: #fff;
-  font-size: 1rem;
   pointer-events: none;
   transition: all 0.5s ease-in-out;
   font-size: 1.6rem;
@@ -104,5 +103,35 @@ background-color: rgb(255, 255,255, 0.5);
 }
 
 @media only screen and (max-width: 992px) {
-  
+  .form_container{
+    /* height: 68rem; */
+    width: 68rem;
+  }
+  .form_container h2{
+    font-size: 4.5rem;
+  }
+  .inputBox label {
+    font-size: 3rem;
+  }
+  .inputBox {
+    position: relative;
+    margin: 5.5rem 0 10px 0;
+  }
+  .inputBox input {
+    height: 6.8rem;
+    font-size: 3.6rem;
+  }
+  .showPass{
+    top: 9px;
+    right: 26px;
+    font-size: 2.6rem;
+  }  
+  .formButton {
+    height: 50px;
+    font-size: 2.6rem;
+    margin-top: 3rem;
+  }
+  .paragraph{
+    font-size: 2.4rem;
+  }
 }
