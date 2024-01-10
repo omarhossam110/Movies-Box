@@ -37,7 +37,7 @@ export default function NavBar(){
   return (
       <Navbar collapseOnSelect expanded={expanded} expand="lg"
         className={`${styles.model} ${scrollDown? styles.modelMove:null} navbar-dark`}>   
-        <div className='container'>
+        <div className='container-fluid'>
 
           <Link className="navbar-brand" to="">
            <h2 className={styles.brand}>MoviesBox</h2>
@@ -79,10 +79,11 @@ export default function NavBar(){
 
                  <Nav className="navbar-nav mb-2 mb-lg-0 ms-auto">
                   <Nav.Link className="nav-item d-flex align-items-center m-md-auto m-sm-auto">
-                    <p className={`${styles.userName} mb-lg-0 me-lg-3 mb-5`}>Welcome &nbsp;
+                    <p className={`${styles.userName} mb-lg-0 me-lg-3 mb-5`}>
                       <Link onClick={() => setExpanded(expanded ? false : "expanded")}
                        to='/profile' className={styles.profile_link}>
-                         {JSON.parse(userToken).first_name.toUpperCase()}
+                         {JSON.parse(userToken).first_name.toUpperCase()}&nbsp;
+                         {JSON.parse(userToken).last_name.toUpperCase()}
                       </Link>
                     </p>
                   </Nav.Link>
