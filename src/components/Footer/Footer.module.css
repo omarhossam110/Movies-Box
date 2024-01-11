@@ -11,6 +11,20 @@ footer{
 
 .footer__contact{
     font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.footer__contact h4{
+    font-size: 3rem;
+}
+
+.footer__copyright{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer__copyright h4{
+    font-size: 3rem;
 }
 
 .footer__list {
@@ -86,11 +100,14 @@ footer{
 @media only screen and (max-width: 62em) { 
     footer{
         font-size: 2rem;
+        padding: 2rem 0;
     }
 
     .footer__contact{
         width: 80%;
         display: inline-block;
     }
-    
+    .footer__copyright p{
+        font-size: 1.8rem;
+    }
  }; 

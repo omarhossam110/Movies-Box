@@ -11,8 +11,8 @@ export default function Footer() {
             <div
               className={`col-lg-6 d-flex align-items-center justify-content-center`}
             >
-              <div className="footer__contact mb-5">
-                <h4 style={{fontSize:'2rem'}}>Contact Me</h4>
+              <div className={styles.footer__contact}>
+                <h4>Contact Me</h4>
                 <ul class={`${styles.footer__list} ps-0 mb-0`}>
                   <li class={`${styles.footer__item}`}>
                     <a
@@ -76,7 +76,7 @@ export default function Footer() {
               className={`col-lg-6 d-flex align-items-center justify-content-center`}
             >
               <div class={`${styles.footer__copyright}`}>
-                <h4 style={{fontSize:'2rem'}}>Copyrights</h4>
+                <h4>Copyrights</h4>
                 <p class="footer__copyright-p">
                   This Site is built by &nbsp;
                   <a
