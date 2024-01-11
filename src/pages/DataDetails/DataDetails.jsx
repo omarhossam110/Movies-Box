@@ -37,7 +37,7 @@ export default function DataDetails() {
         
       {dataDetails ? (
 
-          <div className={`container d-flex- align-items-center`} style={{padding:'5rem 0'}}>
+          <div className={`${styles.section} container`}>
             
             <div className={`${styles.dataDetails} row`}>             
               <div className="col-lg-12"> 
