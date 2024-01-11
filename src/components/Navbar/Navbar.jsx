@@ -53,25 +53,25 @@ export default function NavBar(){
                  <Nav className="navbar-nav mb-5 mb-lg-0">
                   <Nav.Link onClick={() => setExpanded(expanded ? false : "expanded")}
                   className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
-                    <Link className="nav-link text-center" to="">
+                    <Link className={`${styles.nav_a} text-center`} to="">
                       Home
                     </Link>
                   </Nav.Link>
                   <Nav.Link  onClick={() => setExpanded(expanded ? false : "expanded")}
                   className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
-                    <Link className="nav-link text-center" to="movies">
+                    <Link className={`${styles.nav_a} text-center`} to="movies">
                       Movies
                     </Link>
                   </Nav.Link>
                   <Nav.Link  onClick={() => setExpanded(expanded ? false : "expanded")}
                   className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
-                    <Link className="nav-link text-center" to="tv-shows">
+                    <Link className={`${styles.nav_a} text-center`} to="tv-shows">
                       Tv Shows
                     </Link>
                   </Nav.Link>
                   <Nav.Link onClick={() => setExpanded(expanded ? false : "expanded")}
                   className={`nav-item p-2 ${styles.navbar_link} ${scrollDown? styles.navbarCollapseColor:null}`}>
-                    <Link className="nav-link text-center" to="actors&directors">
+                    <Link className={`${styles.nav_a} text-center`} to="actors&directors">
                       Actors/Directors
                     </Link>
                   </Nav.Link>
@@ -88,7 +88,7 @@ export default function NavBar(){
                     </p>
                   </Nav.Link>
                   <Nav.Link className="nav-item p-2 mt-4 m-lg-0">
-                    <button className={`${styles.logOut} btn btn-light d-flex m-md-auto m-sm-auto`} 
+                    <button className={`${styles.logOut} btn btn-light d-flex m-md-auto m-sm-auto mb-md-5 mb-lg-0`} 
                             onClick={()=>{
                               logOut();
                               setExpanded(expanded ? false : "expanded");

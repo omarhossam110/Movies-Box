@@ -47,6 +47,22 @@
     border-radius: 5px;
 }
 
+.nav_a{
+    display: block;
+    padding: .5rem;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #ffffff8c;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav_a:focus{
+    color: #bb8c00;
+}
+
 .navbarCollapseColor{
     transition: all .5s ease-in-out;
 }
@@ -114,14 +130,15 @@
 
     .navbar_link{
         font-size: 4rem !important;
-    }   
-    
+    }  
+
     .userName{
         font-size: 3.5rem !important;
     }
    
     .logOut{
         font-size: 3rem !important;
-        margin-bottom: 2rem !important;
+        padding: 1rem !important;
+        margin-bottom: 4rem !important;
     }
    }
