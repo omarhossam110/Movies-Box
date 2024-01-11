@@ -39,7 +39,7 @@ export default function DataDetails() {
 
           <div className={`container d-flex- align-items-center`} style={{padding:'5rem 0'}}>
             
-            <div className={`row`} style={{fontSize:'1.8rem'}}>             
+            <div className={`${styles.dataDetails} row`}>             
               <div className="col-lg-12"> 
                 <div className={`row`}>
                     <div className="col-lg-4">

@@ -9,6 +9,10 @@
   animation: cont 10000ms ease-in-out infinite alternate;
 }
 
+.dataDetails{
+  font-size: 1.8rem;
+}
+
 .data_container{
     display: flex;
     border-radius: 5px;
@@ -27,4 +31,7 @@
   .fullHight{
     height: 100vh !important;
   }
+  .dataDetails{
+    font-size: 2.8rem;
+  }  
 }
