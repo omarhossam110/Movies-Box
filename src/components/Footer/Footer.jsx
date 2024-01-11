@@ -1,10 +1,15 @@
 import React from "react";
 
 import styles from "./Footer.module.css";
+import { useAuth } from "../../context/AuthContext";
 
 export default function Footer() {
+
+  const {userToken} = useAuth();
+
   return (
-    <footer>
+  <>
+    <footer  className={userToken ? 'd-block':'d-none'}>
       <div className={`${styles.footerBox}`}>
         <div className="container">
           <div className="row">
@@ -106,5 +111,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+  </>   
   );
 }
