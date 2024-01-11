@@ -7,7 +7,7 @@ import Footer from '../components/Footer/Footer'
 export default function MainLayout({userToken, logOut}) {
   return (
     <>
-      <NavBar userToken={userToken} logOut={logOut} />
+      <NavBar />
          
          {/* The pages you want to represent will automatically replace this <Outlet></Outlet> Component */}
          <Outlet></Outlet>
