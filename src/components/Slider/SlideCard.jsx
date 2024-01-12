@@ -29,7 +29,7 @@ export default function SlideCard({reqData,direction}) {
                     </div>
                   </div>
               </div>
-              <h5 className={`${styles.cardTitle} text-center mt-2 mb-5`}>{data.title || data.name}</h5>
+              {/* <h5 className={`${styles.cardTitle} text-center mt-2 mb-5`}>{data.title || data.name}</h5> */}
           </Link>
     </>
   )
