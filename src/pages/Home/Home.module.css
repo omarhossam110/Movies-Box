@@ -1,3 +1,12 @@
+.containerFluid{
+  --bs-gutter-x: 12.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .home_section_intro{
     position: relative;

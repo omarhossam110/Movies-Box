@@ -2,15 +2,14 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar} from "@fortawesome/free-solid-svg-icons";
-import styles from './Home.module.css';
+import styles from './Slider.module.css';
 
-export default function HomeCard({reqData,direction}) {
+export default function SlideCard({reqData,direction}) {
     let data = reqData;
     let media = direction;
   return (
     <>
-      <div className="col-lg-2 d-md-none d-lg-block mt-4">
-          <Link to={`/${media}Details/${media}/${data.id}`} className="text-decoration-none text-light">
+     <Link to={`/${media}Details/${media}/${data.id}`} className="text-decoration-none text-light">
               <div className={`content border rounded border-light text-light`}>
                   <div className={`${styles.imgLayer}`}>
                     <img src={`https://image.tmdb.org/t/p/w500/${data.poster_path ||  data.profile_path}`} 
@@ -32,7 +31,6 @@ export default function HomeCard({reqData,direction}) {
               </div>
               <h5 className={`${styles.cardTitle} text-center mt-2 mb-5`}>{data.title || data.name}</h5>
           </Link>
-      </div>
     </>
   )
 }
