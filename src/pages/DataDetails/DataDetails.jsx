@@ -34,6 +34,9 @@ export default function DataDetails() {
 
    <section>
     <div className={style.navFix}>
+        <div className={styles.containerFluid}>
+
+
         
       {dataDetails ? (
 
@@ -110,6 +113,8 @@ export default function DataDetails() {
               <i className="fa-solid fa-spin fa-spinner fa-5x"></i>
             </div>
           )}
+
+       </div>   
       </div> 
     </section>
    </> 

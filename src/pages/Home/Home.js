@@ -10,7 +10,7 @@ import { HomeContext } from "../../context/HomeContext";
 import Slider from "../../components/Slider/Slider";
 
 import style from "../index.module.css";
-// import styles from './Home.module.css';
+import styles from './Home.module.css';
 
 export default function Home() {
 
@@ -46,8 +46,8 @@ export default function Home() {
         </div> */}
 
 
-
-        <div className="container mt-4"> 
+     <div className={`${styles.containerFluid}`}>
+     <div className="container mt-4"> 
          <div className="row">        
            <div className="col-lg-4 col-sm-12 d-flex align-items-center mt-5 mb-3">
                  <HomeIntro reqData={introData[0]} />
@@ -97,6 +97,9 @@ export default function Home() {
             <Slider sliderList={personList} direction={'person'}/>            
         </div>
         </div>
+
+     </div>
+      
 
         <BackToTop />
       </div>
