@@ -30,7 +30,11 @@ export default function HiddenSidebar({ pageName ,sidebarData, changeType }) {
         onClick={toggleShow}
         className={`${styles.HiddenSidebar}`}
       >
+        Categories
+        <span className="d-flex align-items-center justify-content-center mt-3">
         <FontAwesomeIcon icon={faList} className={`${styles.optionsIcon}`} />
+
+        </span>
       </button>
       <Offcanvas show={show} onHide={handleClose} className={`bg-black ${scrollDown? styles.canvasColor:null}`}>
 
