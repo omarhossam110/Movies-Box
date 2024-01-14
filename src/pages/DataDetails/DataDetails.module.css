@@ -16,6 +16,14 @@
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .containerFluid{
+    margin: 10rem;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .section{
   padding: 5rem 0;
   /* overflow: hidden; */

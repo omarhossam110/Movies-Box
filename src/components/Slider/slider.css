@@ -1,0 +1,7 @@
+.swiper-button-next,.swiper-button-prev,.swiper-pagination-bullet{
+    color: antiquewhite !important;
+}
+
+.swiper-pagination-bullet{
+    background: var(--swiper-pagination-color, antiquewhite) !important;
+}
