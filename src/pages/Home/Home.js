@@ -46,8 +46,8 @@ export default function Home() {
         </div> */}
 
 
-     <div className={`${styles.containerFluid}`}>
-     <div className="container mt-4"> 
+    <div className={`${styles.containerFluid}`}>
+     <div className="container"> 
          <div className="row">        
            <div className="col-lg-4 col-sm-12 d-flex align-items-center mt-5 mb-3">
                  <HomeIntro reqData={introData[0]} />
@@ -64,7 +64,7 @@ export default function Home() {
          </div>
         </div>
      
-        <div className="container">
+        <div className="container mt-5">
          <div className="row pt-5 border-top">
              <div className="col-lg-4 d-flex align-items-center mt-5 mb-4">
                 <HomeIntro reqData={introData[1]} />

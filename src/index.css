@@ -81,3 +81,9 @@ code {
 section{
   min-height: 100vh;
 }
+
+@media (min-width: 768px){
+ .container, .container-md, .container-sm {
+    max-width: 810px;
+ }
+}
