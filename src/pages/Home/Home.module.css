@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 992px) {
   .containerFluid{
-    margin: 10rem;
+    margin: 10rem 0;
     max-width: 100%;
     width: 100%;
   }
