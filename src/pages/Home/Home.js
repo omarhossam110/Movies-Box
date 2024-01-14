@@ -38,7 +38,7 @@ export default function Home() {
         <title>Home | MovieBox</title>
      </Helmet>
 
-    <section>
+    <section className="d-md-flex justify-content-center align-items-center d-lg-relative">
       <div className={style.navFix}>
 
         {/* <div className="container">
