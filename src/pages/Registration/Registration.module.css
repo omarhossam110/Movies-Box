@@ -16,7 +16,7 @@
     /* background: transparent; */
     /* backdrop-filter: blur(55px); */
     border-radius: 20px;
-    padding: 1.4rem;
+    padding: 2.5rem;
 }
 
 .form_container h2{
@@ -106,6 +106,7 @@ background-color: rgb(255, 255,255, 0.5);
   .form_container{
     /* height: 68rem; */
     width: 85rem;
+    padding: 4.5rem;
   }
   .form_container h2{
     font-size: 4.5rem;
